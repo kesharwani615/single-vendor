@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /single_vendor_admin/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /single_vendor_admin/index.html [L]
